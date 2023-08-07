@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="coverImage"></div>
+      <main class="main">
+        <div class="header">
+          <h3>TODO</h3>
+          <img src="./dist/images/icon-sun.svg" />
+        </div>
+        <!-- FORM -->
+        <div class="card form-group">
+          <button id="todo-checkbox" class="checkbox">
+            <img src="./dist/images/icon-check.svg" alt="" />
+          </button>
+          <input
+            id="todo-input"
+            type="text"
+            placeholder="Create a new todo..."
+          />
+        </div>
+        <br />
+        <!-- List -->
+        <ul class="todo-list" id="todo-list">
+          <!-- <li class="todo-list__item">
+            <div class="card">
+              <div class="checkbox active">
+                
+              </div>
+              <p>asfjlkasjdfklajsdklfjasdklf</p>
+              <button class="close-btn">
+                <img width="15px" src="./dist/images/icon-cross.svg" alt="" />
+              </button>
+            </div>
+          </li> -->
+          <!-- <li class="todo-list__item">
+            <div class="card">
+              <div class="checkbox"></div>
+              <p>asfjlkasjdfklajsdklfjasdklf</p>
+              <button class="close-btn">
+                <img width="15px" src="./dist/images/icon-cross.svg" alt="" />
+              </button>
+            </div>
+          </li> -->
+          <li class="todo-list__item controls">
+            <div class="card">
+              <p class="remaining-text">5 items left</p>
+              <button id="btn-clear-completed">Clear Completed</button>
+            </div>
+          </li>
+        </ul>
+        <br />
+        <div class="card filter">
+          <div class="filter__wrapper">
+            <button data-value="all" class="filter-btn">All</button>
+            <button data-value="active" class="filter-btn">Active</button>
+            <button data-value="completed" class="filter-btn">Completed</button>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>
